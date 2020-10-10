@@ -1,0 +1,334 @@
+{
+  "jwt": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjAyMjQ0MjUzLCJleHAiOjE2MDQ4MzYyNTN9.nusM3A1lmY5M-Cb7I78dkELyxNV1nOvqfk3FtCniYQA",
+  "user": {
+    "id": 1,
+    "username": "yunusemrecagliyan@gmail.com",
+    "email": "yunusemrecagliyan@gmail.com",
+    "provider": "local",
+    "confirmed": true,
+    "blocked": false,
+    "role": {
+      "id": 1,
+      "name": "Authenticated",
+      "description": "Default role given to authenticated user.",
+      "type": "authenticated",
+      "created_by": null,
+      "updated_by": null
+    },
+    "lastEpisode": {
+      "id": 3,
+      "chapterNo": "1",
+      "seasonNo": "1",
+      "name": "I Am The Danger",
+      "serie": 2,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2020-08-02T03:37:33.926Z",
+      "updated_at": "2020-10-08T14:47:20.158Z"
+    },
+    "created_by": {
+      "id": 1,
+      "firstname": "Yunus",
+      "lastname": "Cagliyan",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Yunus",
+      "lastname": "Cagliyan",
+      "username": null
+    },
+    "created_at": "2020-08-07T02:34:32.427Z",
+    "updated_at": "2020-10-08T17:22:17.582Z",
+    "savedSeries": [
+      {
+        "id": 2,
+        "name": "Breaking Bad",
+        "genre": "Aksiyon, Suç, Gerilim,Bilim,Kimya",
+        "difficulty": "Zor",
+        "seasonCount": 6,
+        "description": "dsadadasdsadsadsads",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-02T03:33:13.969Z",
+        "updated_at": "2020-10-08T14:47:20.192Z",
+        "avatarImage": {
+          "id": 3,
+          "name": "breaking-bad-filmi.jpg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1600,
+          "height": 1000,
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_breaking-bad-filmi.jpg",
+              "hash": "thumbnail_breaking_bad_filmi_a091d3cebe",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 245,
+              "height": 153,
+              "size": 9.56,
+              "path": null,
+              "url": "/uploads/thumbnail_breaking_bad_filmi_a091d3cebe.jpg"
+            },
+            "large": {
+              "name": "large_breaking-bad-filmi.jpg",
+              "hash": "large_breaking_bad_filmi_a091d3cebe",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 1000,
+              "height": 625,
+              "size": 124.02,
+              "path": null,
+              "url": "/uploads/large_breaking_bad_filmi_a091d3cebe.jpg"
+            },
+            "medium": {
+              "name": "medium_breaking-bad-filmi.jpg",
+              "hash": "medium_breaking_bad_filmi_a091d3cebe",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 750,
+              "height": 469,
+              "size": 69.04,
+              "path": null,
+              "url": "/uploads/medium_breaking_bad_filmi_a091d3cebe.jpg"
+            },
+            "small": {
+              "name": "small_breaking-bad-filmi.jpg",
+              "hash": "small_breaking_bad_filmi_a091d3cebe",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 500,
+              "height": 313,
+              "size": 33.31,
+              "path": null,
+              "url": "/uploads/small_breaking_bad_filmi_a091d3cebe.jpg"
+            }
+          },
+          "hash": "breaking_bad_filmi_a091d3cebe",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "size": 273.3,
+          "url": "/uploads/breaking_bad_filmi_a091d3cebe.jpg",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null,
+          "created_by": 1,
+          "updated_by": 1,
+          "created_at": "2020-08-02T03:31:31.603Z",
+          "updated_at": "2020-08-02T03:31:31.682Z"
+        },
+        "backgroundImage": {
+          "id": 4,
+          "name": "https://oitheblog.com/wp-content/uploads/2014/10/Breaking-Bad-Movie-Wallpaper-Background-1024x576.png",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1024,
+          "height": 576,
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_https://oitheblog.com/wp-content/uploads/2014/10/Breaking-Bad-Movie-Wallpaper-Background-1024x576.png",
+              "hash": "thumbnail_Breaking_Bad_Movie_Wallpaper_Background_1024x576_85dd96d2ad",
+              "ext": ".png",
+              "mime": "image/png",
+              "width": 245,
+              "height": 138,
+              "size": 57.33,
+              "path": null,
+              "url": "/uploads/thumbnail_Breaking_Bad_Movie_Wallpaper_Background_1024x576_85dd96d2ad.png"
+            },
+            "large": {
+              "name": "large_https://oitheblog.com/wp-content/uploads/2014/10/Breaking-Bad-Movie-Wallpaper-Background-1024x576.png",
+              "hash": "large_Breaking_Bad_Movie_Wallpaper_Background_1024x576_85dd96d2ad",
+              "ext": ".png",
+              "mime": "image/png",
+              "width": 1000,
+              "height": 563,
+              "size": 820.55,
+              "path": null,
+              "url": "/uploads/large_Breaking_Bad_Movie_Wallpaper_Background_1024x576_85dd96d2ad.png"
+            },
+            "medium": {
+              "name": "medium_https://oitheblog.com/wp-content/uploads/2014/10/Breaking-Bad-Movie-Wallpaper-Background-1024x576.png",
+              "hash": "medium_Breaking_Bad_Movie_Wallpaper_Background_1024x576_85dd96d2ad",
+              "ext": ".png",
+              "mime": "image/png",
+              "width": 750,
+              "height": 422,
+              "size": 475.8,
+              "path": null,
+              "url": "/uploads/medium_Breaking_Bad_Movie_Wallpaper_Background_1024x576_85dd96d2ad.png"
+            },
+            "small": {
+              "name": "small_https://oitheblog.com/wp-content/uploads/2014/10/Breaking-Bad-Movie-Wallpaper-Background-1024x576.png",
+              "hash": "small_Breaking_Bad_Movie_Wallpaper_Background_1024x576_85dd96d2ad",
+              "ext": ".png",
+              "mime": "image/png",
+              "width": 500,
+              "height": 281,
+              "size": 216.47,
+              "path": null,
+              "url": "/uploads/small_Breaking_Bad_Movie_Wallpaper_Background_1024x576_85dd96d2ad.png"
+            }
+          },
+          "hash": "Breaking_Bad_Movie_Wallpaper_Background_1024x576_85dd96d2ad",
+          "ext": ".png",
+          "mime": "image/png",
+          "size": 372.19,
+          "url": "/uploads/Breaking_Bad_Movie_Wallpaper_Background_1024x576_85dd96d2ad.png",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null,
+          "created_by": 1,
+          "updated_by": 1,
+          "created_at": "2020-08-02T03:32:49.697Z",
+          "updated_at": "2020-08-02T03:32:49.757Z"
+        }
+      },
+      {
+        "id": 3,
+        "name": "How I Met Your Mother",
+        "genre": "Komedi, Sitcome",
+        "difficulty": "Kolay",
+        "seasonCount": 9,
+        "description": "dsadadasdsadsadsads",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-05T00:25:24.719Z",
+        "updated_at": "2020-10-08T14:47:24.433Z",
+        "avatarImage": {
+          "id": 5,
+          "name": "https://miro.medium.com/max/3200/1*NwthyMSOHc8vi0wBLfcakA.jpeg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1600,
+          "height": 1200,
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_https://miro.medium.com/max/3200/1*NwthyMSOHc8vi0wBLfcakA.jpeg",
+              "hash": "thumbnail_1_Nwthy_MSO_Hc8vi0w_B_Lfcak_A_0117cb8c07",
+              "ext": ".jpeg",
+              "mime": "image/jpeg",
+              "width": 208,
+              "height": 156,
+              "size": 8.45,
+              "path": null,
+              "url": "/uploads/thumbnail_1_Nwthy_MSO_Hc8vi0w_B_Lfcak_A_0117cb8c07.jpeg"
+            },
+            "large": {
+              "name": "large_https://miro.medium.com/max/3200/1*NwthyMSOHc8vi0wBLfcakA.jpeg",
+              "hash": "large_1_Nwthy_MSO_Hc8vi0w_B_Lfcak_A_0117cb8c07",
+              "ext": ".jpeg",
+              "mime": "image/jpeg",
+              "width": 1000,
+              "height": 750,
+              "size": 87.44,
+              "path": null,
+              "url": "/uploads/large_1_Nwthy_MSO_Hc8vi0w_B_Lfcak_A_0117cb8c07.jpeg"
+            },
+            "medium": {
+              "name": "medium_https://miro.medium.com/max/3200/1*NwthyMSOHc8vi0wBLfcakA.jpeg",
+              "hash": "medium_1_Nwthy_MSO_Hc8vi0w_B_Lfcak_A_0117cb8c07",
+              "ext": ".jpeg",
+              "mime": "image/jpeg",
+              "width": 750,
+              "height": 563,
+              "size": 55.44,
+              "path": null,
+              "url": "/uploads/medium_1_Nwthy_MSO_Hc8vi0w_B_Lfcak_A_0117cb8c07.jpeg"
+            },
+            "small": {
+              "name": "small_https://miro.medium.com/max/3200/1*NwthyMSOHc8vi0wBLfcakA.jpeg",
+              "hash": "small_1_Nwthy_MSO_Hc8vi0w_B_Lfcak_A_0117cb8c07",
+              "ext": ".jpeg",
+              "mime": "image/jpeg",
+              "width": 500,
+              "height": 375,
+              "size": 30.9,
+              "path": null,
+              "url": "/uploads/small_1_Nwthy_MSO_Hc8vi0w_B_Lfcak_A_0117cb8c07.jpeg"
+            }
+          },
+          "hash": "1_Nwthy_MSO_Hc8vi0w_B_Lfcak_A_0117cb8c07",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "size": 183.77,
+          "url": "/uploads/1_Nwthy_MSO_Hc8vi0w_B_Lfcak_A_0117cb8c07.jpeg",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null,
+          "created_by": 1,
+          "updated_by": 1,
+          "created_at": "2020-08-05T00:24:04.382Z",
+          "updated_at": "2020-08-05T00:24:04.471Z"
+        },
+        "backgroundImage": {
+          "id": 6,
+          "name": "https://img-s1.onedio.com/id-5c9e2b7c7355e79e18c6f48a/rev-0/raw/s-b691dd8bd3131f6ebd2cbcbfa2e1373226d033ef.jpg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1200,
+          "height": 600,
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_https://img-s1.onedio.com/id-5c9e2b7c7355e79e18c6f48a/rev-0/raw/s-b691dd8bd3131f6ebd2cbcbfa2e1373226d033ef.jpg",
+              "hash": "thumbnail_s_b691dd8bd3131f6ebd2cbcbfa2e1373226d033ef_dbe03e5b69",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 245,
+              "height": 123,
+              "size": 8.42,
+              "path": null,
+              "url": "/uploads/thumbnail_s_b691dd8bd3131f6ebd2cbcbfa2e1373226d033ef_dbe03e5b69.jpg"
+            },
+            "large": {
+              "name": "large_https://img-s1.onedio.com/id-5c9e2b7c7355e79e18c6f48a/rev-0/raw/s-b691dd8bd3131f6ebd2cbcbfa2e1373226d033ef.jpg",
+              "hash": "large_s_b691dd8bd3131f6ebd2cbcbfa2e1373226d033ef_dbe03e5b69",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 1000,
+              "height": 500,
+              "size": 66.66,
+              "path": null,
+              "url": "/uploads/large_s_b691dd8bd3131f6ebd2cbcbfa2e1373226d033ef_dbe03e5b69.jpg"
+            },
+            "medium": {
+              "name": "medium_https://img-s1.onedio.com/id-5c9e2b7c7355e79e18c6f48a/rev-0/raw/s-b691dd8bd3131f6ebd2cbcbfa2e1373226d033ef.jpg",
+              "hash": "medium_s_b691dd8bd3131f6ebd2cbcbfa2e1373226d033ef_dbe03e5b69",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 750,
+              "height": 375,
+              "size": 43.85,
+              "path": null,
+              "url": "/uploads/medium_s_b691dd8bd3131f6ebd2cbcbfa2e1373226d033ef_dbe03e5b69.jpg"
+            },
+            "small": {
+              "name": "small_https://img-s1.onedio.com/id-5c9e2b7c7355e79e18c6f48a/rev-0/raw/s-b691dd8bd3131f6ebd2cbcbfa2e1373226d033ef.jpg",
+              "hash": "small_s_b691dd8bd3131f6ebd2cbcbfa2e1373226d033ef_dbe03e5b69",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 500,
+              "height": 250,
+              "size": 24.03,
+              "path": null,
+              "url": "/uploads/small_s_b691dd8bd3131f6ebd2cbcbfa2e1373226d033ef_dbe03e5b69.jpg"
+            }
+          },
+          "hash": "s_b691dd8bd3131f6ebd2cbcbfa2e1373226d033ef_dbe03e5b69",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "size": 85.08,
+          "url": "/uploads/s_b691dd8bd3131f6ebd2cbcbfa2e1373226d033ef_dbe03e5b69.jpg",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null,
+          "created_by": 1,
+          "updated_by": 1,
+          "created_at": "2020-08-05T00:24:36.503Z",
+          "updated_at": "2020-08-05T00:24:36.570Z"
+        }
+      }
+    ]
+  }
+}
