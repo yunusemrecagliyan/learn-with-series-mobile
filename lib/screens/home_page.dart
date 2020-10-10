@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:hive/hive.dart';
-import 'package:lernwithseries/_constants/app_contstants.dart';
-import 'package:lernwithseries/components/seriesBanner.dart';
-import 'package:lernwithseries/components/homePageMenu.dart';
-import 'package:lernwithseries/components/userInfo.dart';
-import 'package:lernwithseries/helpers/seriesRouteArguments.dart';
-import 'package:lernwithseries/models/series.dart';
-import 'package:lernwithseries/models/user.dart';
-import 'package:lernwithseries/services/auth_service.dart';
-import 'package:lernwithseries/services/seriesFetch.dart';
+import 'package:learnwithseries/_constants/app_contstants.dart';
+import 'package:learnwithseries/components/seriesBanner.dart';
+import 'package:learnwithseries/components/homePageMenu.dart';
+import 'package:learnwithseries/components/userInfo.dart';
+import 'package:learnwithseries/helpers/seriesRouteArguments.dart';
+import 'package:learnwithseries/models/series.dart';
+import 'package:learnwithseries/models/user.dart';
+import 'package:learnwithseries/services/auth_service.dart';
+import 'package:learnwithseries/services/seriesFetch.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({

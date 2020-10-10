@@ -4,8 +4,8 @@ import 'dart:math';
 
 import 'package:hive/hive.dart';
 import 'package:http/http.dart' as http;
-import 'package:lernwithseries/_constants/app_contstants.dart';
-import 'package:lernwithseries/models/series.dart';
+import 'package:learnwithseries/_constants/app_contstants.dart';
+import 'package:learnwithseries/models/series.dart';
 
 Future<Series> fetchRandomSeries() async {
   var random = new Random();

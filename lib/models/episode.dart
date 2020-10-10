@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:hive/hive.dart';
 
-import 'package:lernwithseries/models/question.dart';
+import 'package:learnwithseries/models/question.dart';
 
 part 'episode.g.dart';
 

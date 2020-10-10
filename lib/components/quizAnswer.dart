@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:lernwithseries/models/question.dart';
+import 'package:learnwithseries/models/question.dart';
 
 class QuizAnswer extends StatefulWidget {
   final Question question;

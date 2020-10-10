@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:lernwithseries/_constants/app_contstants.dart';
-import 'package:lernwithseries/services/auth_service.dart';
+import 'package:learnwithseries/_constants/app_contstants.dart';
+import 'package:learnwithseries/services/auth_service.dart';
 
 class RegisterPage extends StatefulWidget {
   @override

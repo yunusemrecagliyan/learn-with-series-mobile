@@ -1,4 +1,4 @@
-import 'package:lernwithseries/models/series.dart';
+import 'package:learnwithseries/models/series.dart';
 
 class SeriesRouteArguments {
   String episodeId;

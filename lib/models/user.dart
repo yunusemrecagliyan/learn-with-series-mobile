@@ -3,8 +3,8 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:hive/hive.dart';
 
-import 'package:lernwithseries/models/episode.dart';
-import 'package:lernwithseries/models/series.dart';
+import 'package:learnwithseries/models/episode.dart';
+import 'package:learnwithseries/models/series.dart';
 
 part 'user.g.dart';
 

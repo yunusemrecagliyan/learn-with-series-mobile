@@ -2,14 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 
-import 'package:lernwithseries/_constants/app_contstants.dart';
-import 'package:lernwithseries/components/seriesAvatar.dart';
-import 'package:lernwithseries/components/seriesBanner.dart';
-import 'package:lernwithseries/helpers/seriesRouteArguments.dart';
-import 'package:lernwithseries/models/series.dart';
-import 'package:lernwithseries/models/user.dart';
-import 'package:lernwithseries/services/auth_service.dart';
-import 'package:lernwithseries/services/seriesFetch.dart';
+import 'package:learnwithseries/_constants/app_contstants.dart';
+import 'package:learnwithseries/components/seriesAvatar.dart';
+import 'package:learnwithseries/components/seriesBanner.dart';
+import 'package:learnwithseries/helpers/seriesRouteArguments.dart';
+import 'package:learnwithseries/models/series.dart';
+import 'package:learnwithseries/models/user.dart';
+import 'package:learnwithseries/services/auth_service.dart';
+import 'package:learnwithseries/services/seriesFetch.dart';
 
 class SeriesPage extends StatefulWidget {
   final Series series;

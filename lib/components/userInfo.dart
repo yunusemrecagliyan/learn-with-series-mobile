@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lernwithseries/models/user.dart';
+import 'package:learnwithseries/models/user.dart';
 
 class UserInfo extends StatelessWidget {
   final User user;

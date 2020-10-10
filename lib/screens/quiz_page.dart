@@ -1,13 +1,13 @@
 import 'dart:math';
-import 'package:lernwithseries/components/quizAnswer.dart';
+import 'package:learnwithseries/components/quizAnswer.dart';
 
 import 'package:flutter/material.dart';
-import 'package:lernwithseries/components/quizQuestion.dart';
-import 'package:lernwithseries/components/seriesAvatar.dart';
-import 'package:lernwithseries/helpers/countdown.dart';
-import 'package:lernwithseries/models/episode.dart';
-import 'package:lernwithseries/models/question.dart';
-import 'package:lernwithseries/models/series.dart';
+import 'package:learnwithseries/components/quizQuestion.dart';
+import 'package:learnwithseries/components/seriesAvatar.dart';
+import 'package:learnwithseries/helpers/countdown.dart';
+import 'package:learnwithseries/models/episode.dart';
+import 'package:learnwithseries/models/question.dart';
+import 'package:learnwithseries/models/series.dart';
 
 class QuizPage extends StatefulWidget {
   final Series serie;

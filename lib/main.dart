@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:lernwithseries/models/episode.dart';
-import 'package:lernwithseries/models/series.dart';
-import 'package:lernwithseries/models/user.dart';
-import 'package:lernwithseries/routes.dart';
+import 'package:learnwithseries/models/episode.dart';
+import 'package:learnwithseries/models/series.dart';
+import 'package:learnwithseries/models/user.dart';
+import 'package:learnwithseries/routes.dart';
 
 import '_constants/app_contstants.dart';
 import 'models/helpermodels/avatarImage.dart';

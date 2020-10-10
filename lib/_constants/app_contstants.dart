@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:hive/hive.dart';
-import 'package:lernwithseries/services/auth_service.dart';
+import 'package:learnwithseries/services/auth_service.dart';
 
 class RoutePaths {
   static const String Login = 'login';

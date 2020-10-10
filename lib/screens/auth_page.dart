@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lernwithseries/_constants/app_contstants.dart';
+import 'package:learnwithseries/_constants/app_contstants.dart';
 
 class Auth extends StatelessWidget {
   @override

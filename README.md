@@ -1,4 +1,4 @@
-# lernwithseries
+# learnwithseries
 
 A new Flutter project.
 

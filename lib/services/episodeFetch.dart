@@ -2,8 +2,8 @@ import 'dart:io';
 
 import 'package:hive/hive.dart';
 import 'package:http/http.dart' as http;
-import 'package:lernwithseries/_constants/app_contstants.dart';
-import 'package:lernwithseries/models/episode.dart';
+import 'package:learnwithseries/_constants/app_contstants.dart';
+import 'package:learnwithseries/models/episode.dart';
 
 Future<Episode> fetchEpisode(String id) async {
   String token = Hive.box("auth").get("tokens");

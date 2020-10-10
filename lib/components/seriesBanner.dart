@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lernwithseries/_constants/app_contstants.dart';
-import 'package:lernwithseries/components/seriesAvatar.dart';
-import 'package:lernwithseries/models/series.dart';
+import 'package:learnwithseries/_constants/app_contstants.dart';
+import 'package:learnwithseries/components/seriesAvatar.dart';
+import 'package:learnwithseries/models/series.dart';
 
 class SeriesBanner extends StatelessWidget {
   final Series series;

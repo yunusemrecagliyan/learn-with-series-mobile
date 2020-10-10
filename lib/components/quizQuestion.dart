@@ -1,8 +1,8 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:lernwithseries/_constants/app_contstants.dart';
-import 'package:lernwithseries/models/question.dart';
+import 'package:learnwithseries/_constants/app_contstants.dart';
+import 'package:learnwithseries/models/question.dart';
 
 class QuizQuestion extends StatefulWidget {
   final Question question;

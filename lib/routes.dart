@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
-import 'package:lernwithseries/helpers/seriesRouteArguments.dart';
-import 'package:lernwithseries/models/series.dart';
-import 'package:lernwithseries/screens/all_series_page.dart';
-import 'package:lernwithseries/screens/auth_page.dart';
-import 'package:lernwithseries/screens/login_page.dart';
-import 'package:lernwithseries/screens/episode_page.dart';
-import 'package:lernwithseries/screens/home_page.dart';
-import 'package:lernwithseries/screens/quiz_page.dart';
-import 'package:lernwithseries/screens/register_page.dart';
-import 'package:lernwithseries/screens/saved_series_page.dart';
-import 'package:lernwithseries/screens/series_page.dart';
+import 'package:learnwithseries/helpers/seriesRouteArguments.dart';
+import 'package:learnwithseries/models/series.dart';
+import 'package:learnwithseries/screens/all_series_page.dart';
+import 'package:learnwithseries/screens/auth_page.dart';
+import 'package:learnwithseries/screens/login_page.dart';
+import 'package:learnwithseries/screens/episode_page.dart';
+import 'package:learnwithseries/screens/home_page.dart';
+import 'package:learnwithseries/screens/quiz_page.dart';
+import 'package:learnwithseries/screens/register_page.dart';
+import 'package:learnwithseries/screens/saved_series_page.dart';
+import 'package:learnwithseries/screens/series_page.dart';
 
-import 'package:lernwithseries/_constants/app_contstants.dart';
+import 'package:learnwithseries/_constants/app_contstants.dart';
 
 class Router {
   static Route<dynamic> generateRoute(RouteSettings settings) {

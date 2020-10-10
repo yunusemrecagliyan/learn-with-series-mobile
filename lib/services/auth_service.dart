@@ -3,8 +3,8 @@ import 'dart:io';
 
 import 'package:hive/hive.dart';
 import 'package:http/http.dart' as http;
-import 'package:lernwithseries/_constants/app_contstants.dart';
-import 'package:lernwithseries/models/user.dart';
+import 'package:learnwithseries/_constants/app_contstants.dart';
+import 'package:learnwithseries/models/user.dart';
 
 class AuthService {
   Future<dynamic> register(
