@@ -30,30 +30,25 @@ class _LoginPageState extends State<LoginPage> {
         elevation: 0,
       ),
       body: SingleChildScrollView(
-        child: Column(
+        child: Stack(
+          alignment: Alignment.center,
           children: [
-            Stack(
-              alignment: Alignment.bottomCenter,
+            ...getListOfStripes(
+                numberOfStripes: 10,
+                color1: Colors.orange,
+                color2: Colors.amber),
+            Column(
               children: [
-                ClipPath(
-                  clipper: LoginClipper(),
-                  child: Container(
-                    height: MediaQuery.of(context).size.height / 3,
-                    width: MediaQuery.of(context).size.width,
-                    color: Colors.orange,
-                    child: Text("data"),
-                  ),
-                ),
                 Text(
                   "Dizilerle İngilizce öğren",
                   style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
                 ),
+                Padding(
+                  padding: const EdgeInsets.all(25),
+                  child: loginForm(context),
+                )
               ],
             ),
-            Padding(
-              padding: const EdgeInsets.all(25),
-              child: loginForm(context),
-            )
           ],
         ),
       ),
@@ -78,7 +73,7 @@ class _LoginPageState extends State<LoginPage> {
           obscureText: true,
           validator: (value) {
             if (value.isEmpty) {
-              return 'Please enter some text';
+              return 'Lütfen Şifrenizi Giriniz';
             }
             return null;
           },
@@ -88,9 +83,12 @@ class _LoginPageState extends State<LoginPage> {
             });
           },
         ),
-        Padding(
+        Container(
+          alignment: Alignment.centerRight,
           padding: const EdgeInsets.symmetric(vertical: 16.0),
           child: RaisedButton(
+            color: Colors.black,
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
             onPressed: () async {
               try {
                 var jwt = await json.decode(await this
@@ -103,11 +101,32 @@ class _LoginPageState extends State<LoginPage> {
                 print(e);
               }
             },
-            child: Text('Giriş'),
+            child: Text(
+              'Giriş',
+              style: TextStyle(color: Colors.orange),
+            ),
           ),
         ),
       ],
     );
+  }
+
+  List<Widget> getListOfStripes(
+      {int numberOfStripes, Color color1, Color color2}) {
+    List<Widget> stripes = [];
+    for (var i = 0; i < numberOfStripes; i++) {
+      stripes.add(
+        ClipPath(
+          child: Container(
+            color: (i % 2 == 0) ? color1 : color2,
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
+          ),
+          clipper: LoginClipper(extent: i * 100.0),
+        ),
+      );
+    }
+    return stripes;
   }
 
   String validateEmail(String value) {
@@ -124,25 +143,24 @@ class _LoginPageState extends State<LoginPage> {
 }
 
 class LoginClipper extends CustomClipper<Path> {
+  final double extent;
+
+  LoginClipper({this.extent});
+
   @override
   Path getClip(Size size) {
-    final path = Path();
-    path.lineTo(170, 0);
-    path.quadraticBezierTo(124, 50, (2 * size.width) / 5, size.height / 5 + 60);
-    path.quadraticBezierTo(
-        200, 160, (8 * size.width) / 12, (7 * size.height) / 12);
-
-    path.quadraticBezierTo(
-        size.width - 40, 175, size.width - 20, size.height - 30);
-    path.quadraticBezierTo(
-        size.width + 20, size.height + 20, size.width, size.height);
-    // path.quadraticBezierTo(350, 175, size.width, size.height);
-
+    var path = Path();
+    path.moveTo(0, extent);
+    path.lineTo(extent, 0);
     path.lineTo(size.width, 0);
-
+    path.lineTo(size.width, size.height);
+    path.lineTo(0, size.height);
+    path.close();
     return path;
   }
 
   @override
-  bool shouldReclip(LoginClipper oldClipper) => true;
+  bool shouldReclip(CustomClipper<Path> oldClipper) {
+    return true;
+  }
 }

@@ -14,8 +14,6 @@ class QuizQuestion extends StatefulWidget {
 }
 
 class _QuizQuestionState extends State<QuizQuestion> {
-  final Widget backgroundSvg = SvgPicture.asset('assets/icons/quizQuestion.svg',
-      semanticsLabel: 'Background');
   AudioPlayer audioPlayer = AudioPlayer();
 
   bool isShow = false;
@@ -31,30 +29,43 @@ class _QuizQuestionState extends State<QuizQuestion> {
       margin: EdgeInsets.only(top: 25),
       child: Stack(
         children: <Widget>[
-          Container(child: backgroundSvg),
           Container(
             padding: EdgeInsets.all(40),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                IconButton(
-                  onPressed: () async => play(),
-                  icon: Icon(
-                    Icons.play_circle_filled,
-                    size: 55,
-                    color: Colors.grey[700],
+                Expanded(
+                  flex: 1,
+                  child: Center(
+                    child: IconButton(
+                      onPressed: () async => play(),
+                      icon: Icon(
+                        Icons.play_circle_filled,
+                        size: 55,
+                        color: Colors.grey[700],
+                      ),
+                    ),
                   ),
                 ),
                 !isShow
-                    ? InkWell(
-                        child: Text("Cümleyi Göster"),
-                        onTap: () {
-                          setState(() {
-                            isShow = !isShow;
-                          });
-                        },
+                    ? Expanded(
+                        flex: 3,
+                        child: Center(
+                          child: InkWell(
+                            child: Text("Cümleyi Göster"),
+                            onTap: () {
+                              setState(() {
+                                isShow = !isShow;
+                              });
+                            },
+                          ),
+                        ),
                       )
                     : Expanded(
-                        child: Text(this.widget.question.englishSentence),
+                        flex: 3,
+                        child: Center(
+                            child: Text(this.widget.question.englishSentence)),
                       ),
               ],
             ),

@@ -120,7 +120,7 @@ class _SeriesPageState extends State<SeriesPage> {
                 "Hakkında",
                 style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
               ),
-              Text(series.description,
+              Text(series.description != null ? series.description : "",
                   style: TextStyle(fontSize: 11, fontWeight: FontWeight.w400)),
               Container(
                 margin: EdgeInsets.only(top: 8, bottom: 8),

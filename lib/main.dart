@@ -34,7 +34,7 @@ class Homepage extends StatelessWidget {
     return MaterialApp(
       title: "Learn English With Tv Series",
       initialRoute: RoutePaths.Auth,
-      onGenerateRoute: Router.generateRoute,
+      onGenerateRoute: MyRouter.generateRoute,
       navigatorKey: navigatorKey,
     );
   }

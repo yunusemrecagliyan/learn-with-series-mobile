@@ -36,34 +36,52 @@ class _RegisterPageState extends State<RegisterPage> {
         child: Column(
           children: [
             Stack(
-              alignment: Alignment.bottomCenter,
+              alignment: Alignment.center,
               children: [
-                ClipPath(
-                  clipper: RegisterClipper(),
-                  child: Container(
-                    height: MediaQuery.of(context).size.height / 3,
-                    width: MediaQuery.of(context).size.width,
-                    color: Colors.orange,
-                    child: Text("data"),
-                  ),
-                ),
-                Text(
-                  "Dizilerle İngilizce öğren",
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
+                ...getListOfStripes(
+                    numberOfStripes: 10,
+                    color1: Colors.orange,
+                    color2: Colors.amber),
+                Column(
+                  children: [
+                    Text(
+                      "Dizilerle İngilizce öğren",
+                      style:
+                          TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(25),
+                      child: registerForm(context),
+                    )
+                  ],
                 ),
               ],
             ),
-            Padding(
-              padding: const EdgeInsets.all(25),
-              child: loginForm(context),
-            )
           ],
         ),
       ),
     );
   }
 
-  Widget loginForm(BuildContext context) {
+  List<Widget> getListOfStripes(
+      {int numberOfStripes, Color color1, Color color2}) {
+    List<Widget> stripes = [];
+    for (var i = 0; i < numberOfStripes; i++) {
+      stripes.add(
+        ClipPath(
+          child: Container(
+            color: (i % 2 == 0) ? color1 : color2,
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
+          ),
+          clipper: RegisterClipper(extent: i * 100.0),
+        ),
+      );
+    }
+    return stripes;
+  }
+
+  Widget registerForm(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
@@ -121,27 +139,28 @@ class _RegisterPageState extends State<RegisterPage> {
             });
           },
         ),
-        Padding(
+        Container(
+          alignment: Alignment.centerRight,
           padding: const EdgeInsets.symmetric(vertical: 16.0),
           child: RaisedButton(
+            color: Colors.black,
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
             onPressed: () async {
               try {
                 var jwt = await json.decode(await this
                     .widget
                     .authService
-                    .register(
-                        name: name,
-                        email: identifier,
-                        lastname: lastname,
-                        password: password,
-                        username: username));
+                    .login(this.identifier, this.password));
                 this.widget.authService.setToken(jwt["jwt"]);
                 Navigator.pushNamed(context, RoutePaths.Home);
               } catch (e) {
                 print(e);
               }
             },
-            child: Text('Giriş'),
+            child: Text(
+              'Giriş',
+              style: TextStyle(color: Colors.orange),
+            ),
           ),
         ),
       ],
@@ -162,25 +181,24 @@ class _RegisterPageState extends State<RegisterPage> {
 }
 
 class RegisterClipper extends CustomClipper<Path> {
+  final double extent;
+
+  RegisterClipper({this.extent});
+
   @override
   Path getClip(Size size) {
-    final path = Path();
-    path.lineTo(170, 0);
-    path.quadraticBezierTo(124, 50, (2 * size.width) / 5, size.height / 5 + 60);
-    path.quadraticBezierTo(
-        200, 160, (8 * size.width) / 12, (7 * size.height) / 12);
-
-    path.quadraticBezierTo(
-        size.width - 40, 175, size.width - 20, size.height - 30);
-    path.quadraticBezierTo(
-        size.width + 20, size.height + 20, size.width, size.height);
-    // path.quadraticBezierTo(350, 175, size.width, size.height);
-
+    var path = Path();
+    path.moveTo(0, extent);
+    path.lineTo(extent, 0);
     path.lineTo(size.width, 0);
-
+    path.lineTo(size.width, size.height);
+    path.lineTo(0, size.height);
+    path.close();
     return path;
   }
 
   @override
-  bool shouldReclip(RegisterClipper oldClipper) => true;
+  bool shouldReclip(CustomClipper<Path> oldClipper) {
+    return true;
+  }
 }

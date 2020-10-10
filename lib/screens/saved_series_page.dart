@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:hive/hive.dart';
 import 'package:learnwithseries/_constants/app_contstants.dart';
 import 'package:learnwithseries/components/seriesBanner.dart';
 import 'package:learnwithseries/models/episode.dart';
 import 'package:learnwithseries/models/series.dart';
-import 'package:learnwithseries/screens/home_page.dart';
 
 class SavedSeries extends StatefulWidget {
   final List<Series> series;

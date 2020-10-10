@@ -14,7 +14,7 @@ import 'package:learnwithseries/screens/series_page.dart';
 
 import 'package:learnwithseries/_constants/app_contstants.dart';
 
-class Router {
+class MyRouter {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case RoutePaths.Home:

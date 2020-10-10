@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:learnwithseries/helpers/background.dart';
 import 'package:learnwithseries/models/user.dart';
 
 class UserInfo extends StatelessWidget {
@@ -13,56 +15,60 @@ class UserInfo extends StatelessWidget {
               children: [
                 ClipPath(
                   clipper: UserClipper(),
-                  child: Container(
-                    padding: EdgeInsets.only(top: 60),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.account_circle,
-                          size: 75,
-                          color: Colors.white,
-                        ),
-                        SizedBox(
-                          width: 12,
-                        ),
-                        Column(
+                  child: Stack(
+                    children: [
+                      Container(
+                        padding: EdgeInsets.only(top: 60),
+                        child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
-                              "${user.firstname} ${user.lastname}",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20),
+                            Icon(
+                              Icons.account_circle,
+                              size: 75,
+                              color: Colors.white,
                             ),
-                            Text(
-                              user.username,
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w600),
-                              overflow: TextOverflow.ellipsis,
-                            )
+                            SizedBox(
+                              width: 12,
+                            ),
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "${user.firstname} ${user.lastname}",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20),
+                                ),
+                                Text(
+                                  user.username,
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w600),
+                                  overflow: TextOverflow.ellipsis,
+                                )
+                              ],
+                            ),
                           ],
                         ),
-                      ],
-                    ),
-                    height: MediaQuery.of(context).size.height / 3,
-                    width: MediaQuery.of(context).size.width,
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        begin: Alignment.topCenter,
-                        end: Alignment
-                            .bottomCenter, // 10% of the width, so there are ten blinds.
-                        colors: [
-                          const Color(0xffFDB220),
-                          const Color(0xffEF9103)
-                        ], // red to yellow
-                        tileMode: TileMode
-                            .mirror, // repeats the gradient over the canvas
-                      ),
-                    ),
+                        height: MediaQuery.of(context).size.height / 3,
+                        width: MediaQuery.of(context).size.width,
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            begin: Alignment.topCenter,
+                            end: Alignment
+                                .bottomCenter, // 10% of the width, so there are ten blinds.
+                            colors: [
+                              const Color(0xffFDB220),
+                              const Color(0xffEF9103)
+                            ], // red to yellow
+                            tileMode: TileMode
+                                .mirror, // repeats the gradient over the canvas
+                          ),
+                        ),
+                      )
+                    ],
                   ),
                 ),
                 Container(
