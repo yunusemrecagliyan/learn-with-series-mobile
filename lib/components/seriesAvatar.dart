@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:learnwithseries/_constants/app_contstants.dart';
 
 class SeriesAvatar extends StatelessWidget {
   final String image;
@@ -15,7 +14,7 @@ class SeriesAvatar extends StatelessWidget {
       ClipRRect(
         borderRadius: BorderRadius.circular(10),
         child: Image.network(
-          baseUrl + this.image,
+          this.image,
           fit: BoxFit.cover,
           height: 90,
           width: 90,

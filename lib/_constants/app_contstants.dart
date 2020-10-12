@@ -18,7 +18,7 @@ class RoutePaths {
   static const String AllSeries = "allSeries";
 }
 
-const baseUrl = "http://192.168.1.110:1337";
+const baseUrl = "https://learnenglishw.herokuapp.com";
 
 reLogin() async {
   var email = Hive.box("auth").get("email");

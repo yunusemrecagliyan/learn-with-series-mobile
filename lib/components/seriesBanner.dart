@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:learnwithseries/_constants/app_contstants.dart';
 import 'package:learnwithseries/components/seriesAvatar.dart';
 import 'package:learnwithseries/models/series.dart';
 
@@ -16,7 +15,7 @@ class SeriesBanner extends StatelessWidget {
           Container(
             width: MediaQuery.of(context).size.width,
             child: Image.network(
-              baseUrl + this.series.backgroundImage.url,
+              this.series.backgroundImage.url,
               fit: BoxFit.cover,
             ),
           ),

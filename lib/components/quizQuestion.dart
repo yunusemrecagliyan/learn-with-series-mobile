@@ -1,6 +1,5 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:learnwithseries/_constants/app_contstants.dart';
 import 'package:learnwithseries/models/question.dart';
 
@@ -77,12 +76,11 @@ class _QuizQuestionState extends State<QuizQuestion> {
 
   play() async {
     await audioPlayer.stop();
-    await audioPlayer.setUrl(baseUrl +
-        this
-            .widget
-            .question
-            .sound
-            .url); // prepare the player with this audio but do not start playing
+    await audioPlayer.setUrl(this
+        .widget
+        .question
+        .sound
+        .url); // prepare the player with this audio but do not start playing
     await audioPlayer.setReleaseMode(
         ReleaseMode.STOP); // set release mode so that it never releases
 
