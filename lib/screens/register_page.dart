@@ -147,10 +147,14 @@ class _RegisterPageState extends State<RegisterPage> {
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
             onPressed: () async {
               try {
-                var jwt = await json.decode(await this
-                    .widget
-                    .authService
-                    .login(this.identifier, this.password));
+                var jwt =
+                    await json.decode(await this.widget.authService.register(
+                          email: identifier,
+                          lastname: lastname,
+                          name: name,
+                          password: password,
+                          username: username,
+                        ));
                 this.widget.authService.setToken(jwt["jwt"]);
                 Navigator.pushNamed(context, RoutePaths.Home);
               } catch (e) {
